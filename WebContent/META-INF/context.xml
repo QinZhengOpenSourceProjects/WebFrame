@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<Context>
+
+	<Resource name="jdbc/oracleds" type="javax.sql.DataSource"
+		maxTotal="100" maxIdle="30" maxWaitMillis="10000" username="sys as sysdba"
+		password="oracle" driverClassName="oracle.jdbc.driver.OracleDriver"
+		url="jdbc:oracle:thin:@127.0.0.1:1521:ORCL" />
+
+	<Resource name="jdbc/pgsqlds" type="javax.sql.DataSource"
+		maxTotal="100" maxIdle="30" maxWaitMillis="10000" username="postgres"
+		password="postgres" driverClassName="org.postgresql.Driver"
+		url="jdbc:postgresql://127.0.0.1:5432/testdb" />
+
+	<Resource name="jdbc/mysqlds" type="javax.sql.DataSource"
+		maxTotal="100" maxIdle="30" maxWaitMillis="10000" username="root"
+		password="123456Dd!" driverClassName="com.mysql.jdbc.Driver" url="jdbc:mysql://127.0.0.1/testdb" />
+
+</Context>

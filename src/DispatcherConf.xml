@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<ActionDispatchers>
+	<ActionDispactcher action="/login.action"
+		class="dev.qz.git.action.function.Login" method="Execute">
+		<ResultPages>
+			<ResultPage case="Success">
+				<page>DynamicPage/Result/Success.jsp</page>
+			</ResultPage>
+			<ResultPage case="Fail">
+				<page>DynamicPage/Result/Fail.jsp</page>
+			</ResultPage>
+		</ResultPages>
+	</ActionDispactcher>
+</ActionDispatchers>
